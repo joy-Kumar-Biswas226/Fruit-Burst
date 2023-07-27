@@ -31,9 +31,13 @@
       tailwind.config = {
         theme: {
           extend: {
+            backgroundImage: {
+            'banner-bg': "url('./images/banner1.png')",
+          },
             colors: {
               clifford: '#da373d',
               'fruit-primary': '#F85559',
+
   
             }
           }
@@ -75,6 +79,7 @@
               <div class="carousel w-full bg-fixed  ">
           
                 <div id="slide1" class="carousel-item relative w-full ">
+                  <div class="absolute inset-0 bg-slate-800 opacity-60"></div>
           
                   <img src="./images//banner1.png" class="w-full" />
                   <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-30">
@@ -93,7 +98,7 @@
           
                   </div>
                   <div
-                    class="absolute  -bottom-16 left-0 right-0 flex-none lg:flex  justify-center bg-white gap-12 mx-32 rounded-lg shadow-lg shadow-black">
+                    class="absolute  -bottom-16 left-0 right-0 lg:flex  justify-center bg-white gap-12 mx-32 rounded-lg shadow-lg shadow-black hidden">
                     <div>
                       <img src="images/fruit1.png" alt="">
                       <p>Strawberry</p>
@@ -117,6 +122,7 @@
                   </div>
                 </div>
                 <div id="slide2" class="carousel-item relative w-full ">
+                  <div class="absolute inset-0 bg-slate-800 opacity-60"></div>
           
                   <img src="./images//banner2.png" class="w-full" />
                   <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-30">
@@ -135,7 +141,7 @@
           
                   </div>
                   <div
-                    class="absolute  -bottom-16 left-0 right-0 flex-none lg:flex  justify-center bg-white gap-12 mx-32 rounded-lg shadow-lg shadow-black">
+                    class="absolute  -bottom-16 left-0 right-0  lg:flex  justify-center bg-white gap-12 mx-32 rounded-lg shadow-lg shadow-black hidden">
                     <div>
                       <img src="images/fruit1.png" alt="">
                       <p>Strawberry</p>
@@ -159,6 +165,7 @@
                   </div>
                 </div>
                 <div id="slide3" class="carousel-item relative w-full ">
+                  <div class="absolute inset- bg-slate-800 opacity-60"></div>
           
                   <img src="./images//banner3.png" class="w-full" />
                   <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-30">
@@ -177,7 +184,7 @@
           
                   </div>
                   <div
-                    class="absolute  -bottom-16 left-0 right-0 flex-none lg:flex  justify-center bg-white gap-12 mx-32 rounded-lg shadow-lg shadow-black">
+                    class="absolute  -bottom-16 left-0 right-0 lg:flex  justify-center bg-white gap-12 mx-32 rounded-lg shadow-lg shadow-black hidden">
                     <div>
                       <img src="images/fruit1.png" alt="">
                       <p>Strawberry</p>
@@ -201,6 +208,7 @@
                   </div>
                 </div>
                 <div id="slide4" class="carousel-item relative w-full ">
+                  <div class="absolute inset-0 bg-slate-800 opacity-50"></div>
           
                   <img src="./images//banner4.png" class="w-full" />
                   <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-30">
@@ -219,7 +227,7 @@
           
                   </div>
                   <div
-                    class="absolute  -bottom-16 left-0 right-0 flex-none lg:flex  justify-center bg-white gap-12 mx-32 rounded-lg shadow-lg shadow-black">
+                    class="absolute  -bottom-16 left-0 right-0 lg:flex  justify-center bg-white gap-12 mx-32 rounded-lg shadow-lg shadow-black hidden">
                     <div>
                       <img src="images/fruit1.png" alt="">
                       <p>Strawberry</p>
@@ -251,48 +259,47 @@
  <!-- Deal of the day section -->
 
       <section class="max-w-screen-2xl mx-auto">
-        <div class="flex gap-80 pt-12 ">
+        <div class="flex flex-wrap lg:gap-80 pt-12 gap-8 ">
           <div>
             <h1 class="text-4xl mb-10">Deal of the day</h1>
             <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin
               literature
               from 45 BC, making it over 2000 years old.</p>
           </div>
-          <div class="flex gap-5 ">
+          <div class="flex gap-5  justify-center items-center">
             <div>
               <h1 class="text-4xl">29</h1>
               <p class="text-xs">Days</p>
     
             </div>
             <div>
-              <h1>:</h1>
+              <h1><i class="fa-solid fa-ellipsis-vertical"></i></h1>
             </div>
             <div>
               <h1 class="text-4xl">15</h1>
               <p class="text-xs">Hours</p>
             </div>
             <div>
-              <h1>:</h1>
+              <h1><i class="fa-solid fa-ellipsis-vertical"></i></h1>
             </div>
             <div>
               <h1 class="text-4xl">25</h1>
               <p class="text-xs">Minutes</p>
             </div>
             <div>
-              <h1>:</h1>
+              <h1><i class="fa-solid fa-ellipsis-vertical"></i></h1>
             </div>
             <div>
               <h1 class="text-4xl">08</h1>
-              <p class="text-xs">Second</p>
+              <p class="text-xs">Seconds</p>
             </div>
           </div>
         </div>
     
-        <!-- cards section -->
+        <!-- all cards section -->
         <div class="text-center">
-          <div class="flex my-10 ">
-            <div class="mt-9">
-              <div class="card w-80 bg-base-100 shadow-xl flex items-center mb-3 gap-10">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 my-10  gap-6">
+              <div class="card bg-base-100 shadow-xl flex items-center mb-3 gap-10">
                 <figure><img src="images/fruit6.png" alt="Apple" /></figure>
                 <div class="card-body items-center">
                   <h2 class="card-title">12.90$ - 18.85$</h2>
@@ -332,10 +339,7 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <!-- banana card -->
-            <div class="mt-9">
-              <div class="card w-80 bg-base-100 shadow-xl flex items-center mb-3 gap-10">
+              <div class="card bg-base-100 shadow-xl flex items-center mb-3 gap-10">
                 <figure><img src="./images//fruit9.png" alt="" /></figure>
                 <div class="card-body items-center">
                   <h2 class="card-title">12.90$ - 18.85$</h2>
@@ -374,10 +378,7 @@
                   </div>
                 </div>
               </div>
-            </div>
-     <!-- red dragon card -->
-            <div class="mt-9">
-              <div class="card w-80 bg-base-100 shadow-xl flex items-center mb-3 gap-10">
+              <div class="card bg-base-100 shadow-xl flex items-center mb-3 gap-10">
                 <figure><img src="./images//fruit8.png" alt="Shoes" /></figure>
                 <div class="card-body items-center">
                   <h2 class="card-title">12.90$ - 18.85$</h2>
@@ -416,10 +417,7 @@
                   </div>
                 </div>
               </div>
-            </div>
-             <!-- orange card -->
-            <div class="mt-9">
-              <div class="card w-80 bg-base-100 shadow-xl flex items-center mb-3 gap-10">
+              <div class="card bg-base-100 shadow-xl flex items-center mb-3 gap-10">
                 <figure><img src="./images//fruit7.png" alt="Shoes" /></figure>
                 <div class="card-body items-center">
                   <h2 class="card-title">12.90$ - 18.85$</h2>
@@ -458,7 +456,6 @@
                   </div>
                 </div>
               </div>
-            </div>
           </div>
           <div>
             <button class=" btn bg-fruit-primary">Show All</button>
@@ -466,16 +463,15 @@
     
         </div>
       </section>
+      
+<!--Meet the team section-->
 
       <section class="max-w-screen-2xl  mx-auto">
         <div class=" relative bg-banner-bg h-[700px]  bg-cover text-white ">
-          <div>
-            <img src="images/team.png" alt="">
-          </div>
+          <div class="absolute inset-0 bg-black opacity-60"></div>
           <div class="flex flex-col gap-8 md:gap-36 absolute inset-0 ">
             <div class="flex pt-20 justify-center text-center">
               <div class="">
-      
                 <h1 class="text-3xl md:text-5xl font-bold pb-10">Meet the team section</h1>
                 <p class="lg:w-2/3 mx-auto">Contrary to popular belief, is not simply random text. It has roots in a piece
                   of classical Latin
@@ -488,7 +484,7 @@
                   <img class="w-20 md:w-32 mx-auto" src="images/member1.png" alt="">
                   <h1 class="pt-5 text-xl">Awlad Hossain</h1>
                   <p>Fruits Expert</p>
-                  <div class="text-fruit-primary">
+                  <div class="text-[#F85559]">
                     <i class=" fa-brands fa-facebook"></i>
                     <i class="fa-brands fa-twitter"></i>
                     <i class="fa-brands fa-linkedin"></i>
@@ -501,7 +497,7 @@
                   <h1 class="pt-5 text-xl">
                     Safia Chowdhury</h1>
                   <p>Fruits Expert</p>
-                  <div class="text-fruit-primary">
+                  <div class="text-[#F85559]">
                     <i class="fa-brands fa-facebook"></i>
                     <i class="fa-brands fa-twitter"></i>
                     <i class="fa-brands fa-facebook"></i>
@@ -514,7 +510,7 @@
                   <h1 class="pt-5 text-xl">
                     Rokib Hossain</h1>
                   <p>Fruits Expert</p>
-                  <div class="text-fruit-primary">
+                  <div class="text-[#F85559]">
                     <i class="fa-brands fa-facebook"></i>
                     <i class="fa-brands fa-twitter"></i>
                     <i class="fa-brands fa-facebook"></i>
@@ -527,7 +523,7 @@
                   <h1 class="pt-5 text-xl">
                     Chaity</h1>
                   <p>Fruits Expert</p>
-                  <div class="text-fruit-primary">
+                  <div class="text-[#F85559]">
                     <i class="fa-brands fa-facebook "></i>
                     <i class="fa-brands fa-twitter"></i>
                     <i class="fa-brands fa-facebook"></i>
@@ -539,6 +535,7 @@
         </div>
       </section>
 
+<!-- why choose Us section-->
       <div class="max-w-screen-2xl mx-auto my-16">
         <div class="flex text-center items-center justify-center ">
           <div>
@@ -589,7 +586,7 @@
           </div>
 
 
-          <!-- Why Choose Us image -->
+          <!-- Why Choose Us images -->
           <div class="mx-auto order-1 lg:order-2">
             <img src="images/whychoose1.png" alt="">
           </div>
@@ -634,13 +631,14 @@
           </div>
         </div>
       </div>
+<!--Footer section-->
 
-      <footer class="footer footer-center p-10 bg-slate-800 text-white text-base-content rounded">
-        <div>
+      <footer class="footer footer-center p-10 bg-slate-800 text-white text-base-content rounded sm:justify-center flex flex-col">
+        <div class="flex">
           <img src="images/logo.png" alt="">
-          <h1>Fruit Burst</h1>
+          <h1 class="text-2xl">Fruit Burst</h1>
         </div>
-        <div class="flex flex-row gap-28">
+        <div class="flex flex-wrap gap-9 justify-center lg:gap-28">
           <a class="link link-hover">Home</a>
           <a class="link link-hover">About Us</a>
           <a class="link link-hover">Shop</a>
